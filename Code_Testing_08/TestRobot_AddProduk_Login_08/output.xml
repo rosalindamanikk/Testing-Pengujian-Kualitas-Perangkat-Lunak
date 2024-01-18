@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.11.2 on win32)" generated="20230602 19:58:06.430" rpa="false">
+<suite id="s1" name="TestSuitePA2" source="D:\eclips\TestSuitePA2">
+<suite id="s1-s1" name="TestSuiteCreateProduk" source="D:\eclips\TestSuitePA2\TestSuiteCreateProduk">
+<suite id="s1-s1-s1" name="CreateProduk" source="D:\eclips\TestSuitePA2\TestSuiteCreateProduk\CreateProduk.robot">
+<test id="s1-s1-s1-t1" name="Test Suite 34">
+<kw name="Test Suite">
+<arguments>
+<arg>35</arg>
+</arguments>
+<kw name="Read Excel">
+<arguments>
+<arg>D:\\eclips\\TestSuitePA2\\TestSuiteCreateProduk${/}..\\Data\\Data1.xlsx</arg>
+<arg>Produk</arg>
+<arg>${index}</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${nama_barang}</var>
+</assign>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<doc>Opens xlsx document file.</doc>
+<arguments>
+<arg>${filepath}</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.836" endtime="20230602 19:58:06.848"></status>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<doc>Returns a page from the current document.</doc>
+<arguments>
+<arg>${sheetname}</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.848" endtime="20230602 19:58:06.849"></status>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<doc>Returns content of a cell.</doc>
+<arguments>
+<arg>${rownum}</arg>
+<arg>${colnum}</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20230602 19:58:06.849" level="INFO">${data} = oreo</msg>
+<status status="PASS" starttime="20230602 19:58:06.849" endtime="20230602 19:58:06.849"></status>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20230602 19:58:06.849" endtime="20230602 19:58:06.850"></status>
+</kw>
+<msg timestamp="20230602 19:58:06.850" level="INFO">${nama_barang} = oreo</msg>
+<status status="PASS" starttime="20230602 19:58:06.836" endtime="20230602 19:58:06.850"></status>
+</kw>
+<kw name="Read Excel">
+<arguments>
+<arg>D:\\eclips\\TestSuitePA2\\TestSuiteCreateProduk${/}..\\Data\\Data1.xlsx</arg>
+<arg>Produk</arg>
+<arg>${index}</arg>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${SKU}</var>
+</assign>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<doc>Opens xlsx document file.</doc>
+<arguments>
+<arg>${filepath}</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.850" endtime="20230602 19:58:06.863"></status>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<doc>Returns a page from the current document.</doc>
+<arguments>
+<arg>${sheetname}</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.863" endtime="20230602 19:58:06.864"></status>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<doc>Returns content of a cell.</doc>
+<arguments>
+<arg>${rownum}</arg>
+<arg>${colnum}</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20230602 19:58:06.865" level="INFO">${data} = sku26</msg>
+<status status="PASS" starttime="20230602 19:58:06.864" endtime="20230602 19:58:06.865"></status>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20230602 19:58:06.865" endtime="20230602 19:58:06.865"></status>
+</kw>
+<msg timestamp="20230602 19:58:06.866" level="INFO">${SKU} = sku26</msg>
+<status status="PASS" starttime="20230602 19:58:06.850" endtime="20230602 19:58:06.866"></status>
+</kw>
+<kw name="Read Excel">
+<arguments>
+<arg>D:\\eclips\\TestSuitePA2\\TestSuiteCreateProduk${/}..\\Data\\Data1.xlsx</arg>
+<arg>Produk</arg>
+<arg>${index}</arg>
+<arg>3</arg>
+</arguments>
+<assign>
+<var>${Deskripsi}</var>
+</assign>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<doc>Opens xlsx document file.</doc>
+<arguments>
+<arg>${filepath}</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.867" endtime="20230602 19:58:06.895"></status>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<doc>Returns a page from the current document.</doc>
+<arguments>
+<arg>${sheetname}</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.895" endtime="20230602 19:58:06.895"></status>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<doc>Returns content of a cell.</doc>
+<arguments>
+<arg>${rownum}</arg>
+<arg>${colnum}</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20230602 19:58:06.896" level="INFO">${data} = roti</msg>
+<status status="PASS" starttime="20230602 19:58:06.895" endtime="20230602 19:58:06.896"></status>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20230602 19:58:06.896" endtime="20230602 19:58:06.896"></status>
+</kw>
+<msg timestamp="20230602 19:58:06.896" level="INFO">${Deskripsi} = roti</msg>
+<status status="PASS" starttime="20230602 19:58:06.866" endtime="20230602 19:58:06.896"></status>
+</kw>
+<kw name="Read Excel">
+<arguments>
+<arg>D:\\eclips\\TestSuitePA2\\TestSuiteCreateProduk${/}..\\Data\\Data1.xlsx</arg>
+<arg>Produk</arg>
+<arg>${index}</arg>
+<arg>4</arg>
+</arguments>
+<assign>
+<var>${Harga}</var>
+</assign>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<doc>Opens xlsx document file.</doc>
+<arguments>
+<arg>${filepath}</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.897" endtime="20230602 19:58:06.905"></status>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<doc>Returns a page from the current document.</doc>
+<arguments>
+<arg>${sheetname}</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.905" endtime="20230602 19:58:06.905"></status>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<doc>Returns content of a cell.</doc>
+<arguments>
+<arg>${rownum}</arg>
+<arg>${colnum}</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20230602 19:58:06.906" level="INFO">${data} = :</msg>
+<status status="PASS" starttime="20230602 19:58:06.906" endtime="20230602 19:58:06.906"></status>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20230602 19:58:06.906" endtime="20230602 19:58:06.906"></status>
+</kw>
+<msg timestamp="20230602 19:58:06.906" level="INFO">${Harga} = :</msg>
+<status status="PASS" starttime="20230602 19:58:06.896" endtime="20230602 19:58:06.906"></status>
+</kw>
+<kw name="Read Excel">
+<arguments>
+<arg>D:\\eclips\\TestSuitePA2\\TestSuiteCreateProduk${/}..\\Data\\Data1.xlsx</arg>
+<arg>Produk</arg>
+<arg>${index}</arg>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${Kuantitas}</var>
+</assign>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<doc>Opens xlsx document file.</doc>
+<arguments>
+<arg>${filepath}</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.907" endtime="20230602 19:58:06.915"></status>
+</kw>
+<kw name="Get Sheet" library="ExcelLibrary">
+<doc>Returns a page from the current document.</doc>
+<arguments>
+<arg>${sheetname}</arg>
+</arguments>
+<status status="PASS" starttime="20230602 19:58:06.915" endtime="20230602 19:58:06.915"></status>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<doc>Returns content of a cell.</doc>
+<arguments>
+<arg>${rownum}</arg>
+<arg>${colnum}</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20230602 19:58:06.916" level="INFO">${data} = 200</msg>
+<status status="PASS" starttime="20230602 19:58:06.915" endtime="20230602 19:58:06.916"></status>
+</kw>
+<kw name="Close Current Excel Document" library="ExcelLibrary">
+<doc>Closes current document.</doc>
+<status status="PASS" starttime="20230602 19:58:06.916" endtime="20230602 19:58:06.916"></status>
+</kw>
+<msg timestamp="20230602 19:58:06.916" level="INFO">${Kuantitas} = 200</msg>
+<status status="PASS" starttime="20230602 19:58:06.907" endtime="20230602 19:58:06.916"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20230602 19:58:06.917" level="INFO">Opening browser 'chrome' to base url 'http://localhost/test/testing_pkpl/public/login'.</msg>
+<status status="PASS" starttime="20230602 19:58:06.916" endtime="20230602 19:58:09.175"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="email"]</arg>
+<arg>Admin@gmail.com</arg>
+</arguments>
+<msg timestamp="20230602 19:58:09.178" level="INFO">Typing text 'Admin@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20230602 19:58:09.176" endtime="20230602 19:58:09.305"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="password"]</arg>
+<arg>password</arg>
+</arguments>
+<msg timestamp="20230602 19:58:09.307" level="INFO">Typing text 'password' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20230602 19:58:09.306" endtime="20230602 19:58:09.394"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="tombol_login"]</arg>
+</arguments>
+<msg timestamp="20230602 19:58:09.396" level="INFO">Clicking element '//*[@id="tombol_login"]'.</msg>
+<status status="PASS" starttime="20230602 19:58:09.395" endtime="20230602 19:58:09.448"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20230602 19:58:14.448" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230602 19:58:09.448" endtime="20230602 19:58:14.448"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_body"]/div[2]/div/div[6]/button[1]</arg>
+</arguments>
+<msg timestamp="20230602 19:58:14.450" level="INFO">Clicking element '//*[@id="kt_body"]/div[2]/div/div[6]/button[1]'.</msg>
+<status status="PASS" starttime="20230602 19:58:14.449" endtime="20230602 19:58:16.661"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20230602 19:58:21.664" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230602 19:58:16.662" endtime="20230602 19:58:21.665"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="#kt_aside_menu"]/div[3]/a/span[2]</arg>
+</arguments>
+<msg timestamp="20230602 19:58:21.667" level="INFO">Clicking element '//*[@id="#kt_aside_menu"]/div[3]/a/span[2]'.</msg>
+<status status="PASS" starttime="20230602 19:58:21.665" endtime="20230602 19:58:22.300"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20230602 19:58:27.303" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230602 19:58:22.301" endtime="20230602 19:58:27.304"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_content_container"]/div/div[1]/div[2]/a</arg>
+</arguments>
+<msg timestamp="20230602 19:58:27.306" level="INFO">Clicking element '//*[@id="kt_content_container"]/div/div[1]/div[2]/a'.</msg>
+<status status="PASS" starttime="20230602 19:58:27.305" endtime="20230602 19:58:27.771"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20230602 19:58:32.774" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230602 19:58:27.772" endtime="20230602 19:58:32.775"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[1]/input</arg>
+<arg>${nama_barang}</arg>
+</arguments>
+<msg timestamp="20230602 19:58:32.777" level="INFO">Typing text 'oreo' into text field '//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[1]/input'.</msg>
+<status status="PASS" starttime="20230602 19:58:32.775" endtime="20230602 19:58:32.887"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20230602 19:58:33.890" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230602 19:58:32.888" endtime="20230602 19:58:33.890"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[2]/input</arg>
+<arg>${SKU}</arg>
+</arguments>
+<msg timestamp="20230602 19:58:33.892" level="INFO">Typing text 'sku26' into text field '//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[2]/input'.</msg>
+<status status="PASS" starttime="20230602 19:58:33.891" endtime="20230602 19:58:34.008"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20230602 19:58:35.009" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230602 19:58:34.009" endtime="20230602 19:58:35.010"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[3]/textarea</arg>
+<arg>${Deskripsi}</arg>
+</arguments>
+<msg timestamp="20230602 19:58:35.011" level="INFO">Typing text 'roti' into text field '//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[3]/textarea'.</msg>
+<status status="PASS" starttime="20230602 19:58:35.010" endtime="20230602 19:58:35.122"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20230602 19:58:36.123" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230602 19:58:35.123" endtime="20230602 19:58:36.124"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[4]/input</arg>
+<arg>${Harga}</arg>
+</arguments>
+<msg timestamp="20230602 19:58:36.125" level="INFO">Typing text ':' into text field '//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[4]/input'.</msg>
+<status status="PASS" starttime="20230602 19:58:36.124" endtime="20230602 19:58:36.301"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20230602 19:58:37.304" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230602 19:58:36.303" endtime="20230602 19:58:37.305"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[5]/input</arg>
+<arg>${kuantitas}</arg>
+</arguments>
+<msg timestamp="20230602 19:58:37.307" level="INFO">Typing text '200' into text field '//*[@id="kt_ecommerce_add_product_form"]/div[2]/div[1]/div[2]/div[5]/input'.</msg>
+<status status="PASS" starttime="20230602 19:58:37.305" endtime="20230602 19:58:37.510"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20230602 19:58:39.512" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230602 19:58:37.511" endtime="20230602 19:58:39.512"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_ecommerce_add_product_submit"]/span[1]</arg>
+</arguments>
+<msg timestamp="20230602 19:58:39.514" level="INFO">Clicking element '//*[@id="kt_ecommerce_add_product_submit"]/span[1]'.</msg>
+<status status="PASS" starttime="20230602 19:58:39.513" endtime="20230602 19:58:39.694"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20230602 19:58:44.696" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230602 19:58:39.695" endtime="20230602 19:58:44.697"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_body"]/div[4]/div/div[6]/button[1]</arg>
+</arguments>
+<msg timestamp="20230602 19:58:44.699" level="INFO">Clicking element '//*[@id="kt_body"]/div[4]/div/div[6]/button[1]'.</msg>
+<status status="PASS" starttime="20230602 19:58:44.697" endtime="20230602 19:58:44.831"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20230602 19:58:47.833" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230602 19:58:44.831" endtime="20230602 19:58:47.834"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="kt_content_container"]/div/div[1]/div[1]/div/input</arg>
+<arg>${nama_barang}</arg>
+</arguments>
+<msg timestamp="20230602 19:58:47.836" level="INFO">Typing text 'oreo' into text field '//*[@id="kt_content_container"]/div/div[1]/div[1]/div/input'.</msg>
+<msg timestamp="20230602 19:58:48.216" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230602 19:58:48.224" level="FAIL">Element with locator '//*[@id="kt_content_container"]/div/div[1]/div[1]/div/input' not found.</msg>
+<status status="FAIL" starttime="20230602 19:58:47.834" endtime="20230602 19:58:48.224"></status>
+</kw>
+<status status="FAIL" starttime="20230602 19:58:06.835" endtime="20230602 19:58:48.225"></status>
+</kw>
+<status status="FAIL" starttime="20230602 19:58:06.834" endtime="20230602 19:58:48.226" critical="yes">Element with locator '//*[@id="kt_content_container"]/div/div[1]/div[1]/div/input' not found.</status>
+</test>
+<status status="FAIL" starttime="20230602 19:58:06.483" endtime="20230602 19:58:48.228"></status>
+</suite>
+<status status="FAIL" starttime="20230602 19:58:06.480" endtime="20230602 19:58:48.235"></status>
+</suite>
+<status status="FAIL" starttime="20230602 19:58:06.455" endtime="20230602 19:58:48.240"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="TestSuitePA2">TestSuitePA2</stat>
+<stat pass="0" fail="1" id="s1-s1" name="TestSuiteCreateProduk">TestSuitePA2.TestSuiteCreateProduk</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="CreateProduk">TestSuitePA2.TestSuiteCreateProduk.CreateProduk</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
